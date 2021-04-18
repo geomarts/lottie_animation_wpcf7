@@ -1,0 +1,77 @@
+/*
+Theme Name: Twenty Twenty Child
+Description: Twenty Twenty Child Theme
+Author: George Martsoukos
+Author URI: https://georgemartsoukos.com
+Template: twentytwenty
+Version: 1.0.0
+*/
+
+/* FORM
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.form-with-lottie-animations * {
+    margin: 0;
+}
+
+.form-with-lottie-animations ul {
+    list-style: none;
+}
+
+.form-with-lottie-animations label {
+    font-family: sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-with-lottie-animations .form-wrapper {
+    margin-bottom: 25px;
+}
+
+.form-with-lottie-animations .form-submit-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.form-with-lottie-animations .wpcf7-submit {
+    width: 200px;
+    height: 55px;
+    color: #222;
+    text-decoration: none;
+    background: #abc398;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-with-lottie-animations .wpcf7-submit:focus {
+    outline: none;
+}
+
+.form-with-lottie-animations .form-submit-wrapper lottie-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-with-lottie-animations .form-submit-wrapper .invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* CF7 STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.form-with-lottie-animations .wpcf7-not-valid-tip,
+.form-with-lottie-animations .wpcf7-response-output,
+.form-with-lottie-animations .ajax-loader {
+    display: none;
+}
+
+.form-with-lottie-animations .show {
+    display: block;
+}
+
+.wpcf7 .form-with-lottie-animations .wpcf7-response-output {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
