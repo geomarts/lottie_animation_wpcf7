@@ -1,3 +1,4 @@
+/*VARIABLES*/
 const formWithLottieAnimations = document.querySelector(
     ".form-with-lottie-animations"
 );
@@ -10,6 +11,7 @@ const responseOutput = formWithLottieAnimations.querySelector(
 const showClass = "show";
 const invisibleClass = "invisible";
 
+/*CLICK EVENT*/
 submitBtn.addEventListener("click", function () {
     submitBtnSpan.classList.add(invisibleClass);
     player.classList.remove(invisibleClass);
@@ -23,6 +25,7 @@ submitBtn.addEventListener("click", function () {
     responseOutput.classList.remove(showClass);
 });
 
+/*CF7 AJAX EVENT*/
 document.addEventListener("wpcf7invalid", function () {
     player.getLottie().playSegments([419, 819], true);
 });
@@ -31,6 +34,7 @@ document.addEventListener("wpcf7mailsent", function () {
     player.getLottie().playSegments([0, 385], true);
 });
 
+/*LOTTIE PLAYER COMPLETE EVENT*/
 player.addEventListener("complete", function () {
     this.classList.add(invisibleClass);
     submitBtnSpan.classList.remove(invisibleClass);
