@@ -19,8 +19,10 @@ submitBtn.addEventListener("click", function () {
     const notValidEls = formWithLottieAnimations.querySelectorAll(
         ".wpcf7-not-valid-tip"
     );
-    for (const notValidEl of notValidEls) {
-        notValidEl.classList.remove(showClass);
+    if (notValidEls.length > 0) {
+        for (const notValidEl of notValidEls) {
+            notValidEl.classList.remove(showClass);
+        }
     }
     responseOutput.classList.remove(showClass);
 });
@@ -42,8 +44,10 @@ player.addEventListener("complete", function () {
     const notValidEls = formWithLottieAnimations.querySelectorAll(
         ".wpcf7-not-valid-tip"
     );
-    for (const notValidEl of notValidEls) {
-        notValidEl.classList.add(showClass);
+    if (notValidEls.length > 0) {
+        for (const notValidEl of notValidEls) {
+            notValidEl.classList.add(showClass);
+        }
     }
     responseOutput.classList.add(showClass);
 

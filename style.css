@@ -54,7 +54,6 @@ Version: 1.0.0
 }
 
 .form-with-lottie-animations .form-submit-wrapper .invisible {
-    opacity: 0;
     visibility: hidden;
 }
 
